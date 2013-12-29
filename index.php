@@ -52,13 +52,13 @@
         <!-- Images -->
         <div id="links" class="links clearfix mosaicflow">
             <?php
-            $dirname = "img/large/";
+            $dirname = "img/large_kraken/";
             $images = glob($dirname."*.jpg");
 
             foreach($images as $image) {
                 echo '
                         <a href="'.$image.'" title="Bild '.substr($image, -9).'" class="mosaicflow__item" data-gallery="">
-            <img src="img/small/'.substr($image, -9).'"  alt="Bild Nummer '.substr($image, -9).'">
+            <img src="img/small_kraken/'.substr($image, -9).'"  alt="Bild Nummer '.substr($image, -9).'">
             </a>';
             }
             ?>
